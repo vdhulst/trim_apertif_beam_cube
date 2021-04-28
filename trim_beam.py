@@ -1,7 +1,12 @@
-#!/home/apercal/pipeline/bin/python3
+#!/home/apercal/pipeline/bin/python3. 
+# change the line above to reflect the location of your local python3 executable
 #
 __author__ = "Thijs van der Hulst"
 __email__ = "vdhulst@astro.rug.nl"
+#
+# runs under the Apercal environment at ASTRON
+# useage: ./trim_beam.py <inputbeam> <outputbeam> <-1> for halving a beam cube
+# and:    ./trim_beam.py <inputbeam> <outputbeam> ,+1> for recreating a full beam cube
 #
 import numpy as np
 import os
