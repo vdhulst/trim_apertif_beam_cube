@@ -23,6 +23,15 @@ if len(sys.argv) < 4:
 filein  = sys.argv[1]
 fileout = sys.argv[2] 
 direction = int(sys.argv[3])
+
+if not os.path.isfile(filein):
+        sys.stderr.write("specified input beam does not exist \n");
+        sys.exit(1);
+
+if os.path.isfile(fileout):
+        sys.stderr.write("specified output beam exists, please specify another name \n");
+        sys.exit(1);
+
 fitsfile = fits.open(filein, memmap=True, do_not_scale_image_data=True)
 
 if direction == -1:
