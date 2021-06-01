@@ -8,6 +8,9 @@ __email__ = "vdhulst@astro.rug.nl"
 # useage: ./trim_beam.py <inputbeam> <outputbeam> <-1> for halving a beam cube
 # and:    ./trim_beam.py <inputbeam> <outputbeam> <+1> for recreating a full beam cube
 #
+# alternatively one could run the script as:
+#   python3 <path_to>/trim_beam.py <inputbeam> <outputbeam> <nr>
+#
 import numpy as np
 import os
 import sys
