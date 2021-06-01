@@ -5,8 +5,8 @@ __author__ = "Thijs van der Hulst"
 __email__ = "vdhulst@astro.rug.nl"
 #
 # runs under the Apercal environment at ASTRON
-# useage: ./trim_beam.py <inputbeam> <outputbeam> <-1> for halving a beam cube
-# and:    ./trim_beam.py <inputbeam> <outputbeam> <+1> for recreating a full beam cube
+# useage: <path_to>/trim_beam.py <inputbeam> <outputbeam> <-1> for halving a beam cube
+# and:    <path_to>/trim_beam.py <inputbeam> <outputbeam> <+1> for recreating a full beam cube
 #
 # alternatively one could run the script as:
 #   python3 <path_to>/trim_beam.py <inputbeam> <outputbeam> <nr>
